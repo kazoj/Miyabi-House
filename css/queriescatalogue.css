@@ -1,0 +1,151 @@
+/* 1300px */
+@media (max-width: 86em) {
+  .width-container img {
+    height: 11rem;
+    width: 11rem;
+  }
+  .card {
+    width: 9.6rem;
+    height: 12.8rem;
+  }
+}
+/* 1100px */
+@media (max-width: 68.75em) {
+  .card {
+    width: 7.68rem;
+    height: 10.24rem;
+  }
+  .card p {
+    font-size: 0.8rem;
+  }
+  .card h2 {
+    font-size: 0.9rem;
+  }
+  .card img {
+    max-height: 3.5rem;
+    max-width: 5.5rem;
+  }
+}
+/* 1000px */
+@media (max-width: 62.5em) {
+  .card {
+    width: 6.9rem;
+    height: 9.2rem;
+  }
+  .card p {
+    font-size: 0.7rem;
+  }
+  .card h2 {
+    font-size: 0.8rem;
+  }
+
+  .card img {
+    max-height: 3.5rem;
+    max-width: 5.5rem;
+  }
+  .width-container img {
+    height: 7rem;
+    width: 7rem;
+  }
+  .card-button {
+    font-size: 0.8rem;
+  }
+}
+/* 850px */
+@media (max-width: 53em) {
+  .card {
+    width: 6.2rem;
+    height: 8.28rem;
+  }
+  .card p {
+    font-size: 0.6rem;
+  }
+  .card h2 {
+    font-size: 0.7rem;
+  }
+
+  .card img {
+    max-height: 3rem;
+    max-width: 5rem;
+  }
+  .width-container img {
+    height: 5.5rem;
+    width: 5.5rem;
+  }
+  .card-button {
+    font-size: 0.7rem;
+  }
+}
+/* 750px */
+@media (max-width: 46.8em) {
+  h1 {
+    font-size: 0.8rem;
+  }
+  .btn {
+    font-size: 0.8rem;
+  }
+  .second-nav img {
+    height: 0.9rem;
+    width: 0.9rem;
+  }
+  .card {
+    width: 5.5rem;
+    height: 7.4rem;
+  }
+  .card p {
+    font-size: 0.6rem;
+  }
+  .card h2 {
+    font-size: 0.7rem;
+  }
+
+  .card img {
+    max-height: 2.5rem;
+    max-width: 4.5rem;
+  }
+  .width-container img {
+    height: 5rem;
+    width: 5rem;
+  }
+  .card-button {
+    font-size: 0.6rem;
+  }
+}
+/* 750px */
+@media (max-width: 40.6em) {
+  h1 {
+    font-size: 0.5rem;
+  }
+  .btn {
+    font-size: 0.5rem;
+  }
+  .second-nav img {
+    height: 0.8rem;
+    width: 0.8rem;
+  }
+  .card {
+    width: 4.41rem;
+    height: 5.94rem;
+  }
+  .card p {
+    font-size: 0.5rem;
+  }
+  .card h2 {
+    font-size: 0.6rem;
+  }
+
+  .card img {
+    max-height: 2rem;
+    max-width: 4rem;
+  }
+  .width-container img {
+    height: 4rem;
+    width: 4rem;
+  }
+  .card-button {
+    font-size: 0.3rem;
+  }
+  #random-button span {
+    font-size: 0.2rem;
+  }
+}

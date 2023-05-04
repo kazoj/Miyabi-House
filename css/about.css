@@ -1,0 +1,253 @@
+@font-face {
+  font-family: "HIRO MISAKE";
+  src: url(../font/hiro_misake.ttf) format("truetype");
+}
+@font-face {
+  font-family: "SATOSHI";
+  src: url(../font/Satoshi-Variable.ttf) format("truetype");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  font-family: satoshi, Verdana, Geneva, Tahoma, sans-serif;
+  background-color: #f3ede1;
+  color: #333f72;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f3ede1;
+  color: #333f72;
+  padding: 2.5rem 2.5rem;
+  font-family: hiro misake, satoshi, Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h1 {
+  font-size: 1.2rem;
+}
+
+nav img {
+  width: 1.2rem;
+  height: 1.2rem;
+}
+
+a:link {
+  text-decoration: none;
+  color: #333f72;
+}
+a:visited {
+  color: #333f72;
+}
+a:hover {
+  color: #e56e0c;
+  font-weight: underline;
+  text-decoration: none;
+}
+
+a:active {
+  background-color: #f3ede1;
+}
+
+h1 a {
+  position: relative;
+}
+
+h1 a:hover::after {
+  content: "";
+  display: block;
+  width: 0.3rem;
+  height: 0.3rem;
+  background-color: #e56e0c;
+  position: absolute;
+  bottom: -1rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+header li {
+  display: inline;
+}
+figure img {
+  height: 20.24rem;
+  width: 25.92rem;
+}
+article h3 {
+  font-family: hiro misake, satoshi, Verdana, Geneva, Tahoma, sans-serif;
+}
+article img {
+  height: 15rem;
+  width: 15rem;
+}
+article {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  width: 80%;
+  gap: 3rem;
+}
+footer {
+  background-color: #333f72;
+  color: white;
+  padding: 1.5rem 0;
+}
+footer ul {
+  list-style: none;
+  padding: 0;
+  margin-right: 2rem;
+}
+
+footer ul li {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+footer h4 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  margin-left: 2rem;
+  font-family: hiro misake, satoshi, Verdana, Geneva, Tahoma, sans-serif;
+}
+/* styling the header elements */
+.btn {
+  font-size: 1rem;
+  background: transparent;
+  border: none;
+  padding: 1em 1.5em;
+  color: #333f72;
+  text-transform: uppercase;
+  position: relative;
+  transition: 0.5s ease;
+}
+
+.btn::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  width: 0;
+  background-color: #e56e0c;
+  transition: 0.5s ease;
+}
+
+.btn:hover {
+  color: #e56e0c;
+  transition-delay: 0.5s;
+}
+
+.btn:hover::before {
+  width: 100%;
+}
+/* Styling for the first navigation bar */
+.first-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2.5rem;
+}
+.second-nav {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 2rem;
+  width: 9rem;
+  padding-right: 0;
+}
+/* Styling for the grandline separator */
+#grandline {
+  background-color: #e9dac6;
+  height: 1px;
+  width: 100%;
+  margin-bottom: 2.2rem;
+}
+.japanese-writing {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 3rem;
+  color: #e9dac6;
+  height: 2rem;
+  transform: translateY(-70%);
+  margin-top: 3rem;
+}
+
+.fst-txt {
+  font-size: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+.scd-txt {
+  font-size: 1.3rem;
+  margin-left: 1rem;
+  width: 70%;
+}
+#enh {
+  font-weight: bold;
+  font-family: hiro misake, satoshi, Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.container-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin: 0 auto;
+}
+.wrapper {
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  position: relative;
+  transform: translateY(-75%);
+  color: #333f72;
+}
+
+.japanese-writing {
+  display: flex;
+  position: relative;
+  white-space: nowrap;
+  animation: slide 20s linear infinite;
+}
+
+.japanese-writing .text {
+  display: flex;
+  width: 100%;
+}
+
+.japanese-writing .text p {
+  margin-right: 20px;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}

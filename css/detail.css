@@ -1,0 +1,189 @@
+/* Define custom fonts */
+@font-face {
+  font-family: "HIRO MISAKE";
+  src: url(../font/hiro_misake.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "SATOSHI";
+  src: url(../font/Satoshi-Variable.ttf) format("truetype");
+}
+/* Reset default margin and padding */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+/* Set global styles for the body */
+body {
+  font-family: satoshi, Verdana, Geneva, Tahoma, sans-serif;
+  background-color: #f3ede1;
+  color: #333f72;
+  font-size: 62.5%;
+}
+
+/* Style the header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f3ede1;
+  color: #333f72;
+  padding: 2.5rem 2.5rem;
+  animation: fadeIn 0.8s ease-in-out;
+  font-family: hiro misake;
+}
+
+/* Set the font size for h1 tags */
+h1 {
+  font-size: 1.2rem;
+}
+
+/* Set the width and height of nav images */
+nav img {
+  width: 1.2rem;
+  height: 1.2rem;
+}
+
+/* Style link colors */
+a:link {
+  text-decoration: none;
+  color: #333f72;
+}
+
+a:visited {
+  color: #333f72;
+}
+
+a:hover {
+  color: #e56e0c;
+  font-weight: underline;
+  text-decoration: none;
+}
+
+a:active {
+  background-color: #f3ede1;
+}
+
+/* Position the h1 tag relative to the anchor tag */
+h1 a {
+  position: relative;
+}
+
+/* Add a hover effect to the h1 tag's anchor tag */
+h1 a:hover::after {
+  content: "";
+  display: block;
+  width: 0.3rem;
+  height: 0.3rem;
+  background-color: #e56e0c;
+  position: absolute;
+  bottom: -1rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+figure {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+/* Style the li tags to display inline */
+header li {
+  display: inline;
+}
+h2,
+h3 {
+  color: #e56e0c;
+  font-family: hiro misake, satoshi;
+  font-size: 1.2rem;
+}
+p {
+  font-size: 1rem;
+}
+li {
+  font-size: 1rem;
+}
+.img {
+  height: max-content;
+  width: max-content;
+}
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  gap: 4rem;
+  margin-bottom: 3rem;
+}
+.container img {
+  max-height: 12rem;
+  max-width: 12rem;
+}
+.middle-cont {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2.5rem;
+  width: 90%;
+}
+
+.btn {
+  font-size: 1rem;
+  background: transparent;
+  border: none;
+  padding: 1em 1.5em;
+  color: #333f72;
+  text-transform: uppercase;
+  position: relative;
+  transition: 0.5s ease;
+  width: 80%;
+}
+
+.btn::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 0.1rem;
+  width: 0;
+  background-color: #e56e0c;
+  transition: 0.5s ease;
+}
+
+.btn:hover {
+  color: #e56e0c;
+  transition-delay: 0.5s;
+}
+
+.btn:hover::before {
+  width: 100%;
+}
+
+.first-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2.5rem;
+}
+.second-nav {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 2rem;
+  width: 9rem;
+  padding-right: 0;
+}
+
+/* Styling for the image in the second navigation bar */
+.second-nav img {
+  margin-right: 0.4rem;
+}
+
+/* Styling for the grandline separator */
+#grandline {
+  background-color: #e9dac6;
+  height: 1px;
+  width: 100%;
+  margin-bottom: 4rem;
+}

@@ -1,0 +1,300 @@
+/* Reset default margin and padding */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+/* Set global styles for the body */
+body {
+  font-family: hiro misake, satoshi, Verdana, Geneva, Tahoma, sans-serif;
+  background-color: #f3ede1;
+  font-size: 62.5%;
+}
+
+/* Style the header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f3ede1;
+  color: #333f72;
+  padding: 2.5rem 2.5rem;
+  animation: fadeIn 0.8s ease-in-out;
+}
+
+/* Set the font size for h1 tags */
+h1 {
+  font-size: 1.2rem;
+}
+
+/* Set the width and height of nav images */
+nav img {
+  width: 1.2rem;
+  height: 1.2rem;
+}
+
+/* Style link colors */
+a:link {
+  text-decoration: none;
+  color: #333f72;
+}
+
+a:visited {
+  color: #333f72;
+}
+
+a:hover {
+  color: #e56e0c;
+  font-weight: underline;
+  text-decoration: none;
+}
+
+a:active {
+  background-color: #f3ede1;
+}
+
+/* Position the h1 tag relative to the anchor tag */
+h1 a {
+  position: relative;
+}
+
+/* Add a hover effect to the h1 tag's anchor tag */
+h1 a:hover::after {
+  content: "";
+  display: block;
+  width: 0.3rem;
+  height: 0.3rem;
+  background-color: #e56e0c;
+  position: absolute;
+  bottom: -1rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* Style the li tags to display inline */
+li {
+  display: inline;
+}
+
+/* Style the section */
+section {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.4rem;
+}
+
+/* Style the h2 tag */
+h2 {
+  color: #333f72;
+  font-size: 4.3rem;
+  text-transform: uppercase;
+  font-weight: lighter;
+}
+
+/* Style the aside tag */
+aside {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transform: rotateY(-50%);
+}
+
+/* Style the aside tag's images */
+aside img {
+  position: absolute;
+  top: 50%;
+  height: 17rem;
+  width: 17rem;
+}
+
+aside img:first-child {
+  left: 0;
+  transform: translate(0, -50%);
+}
+
+aside img:last-child {
+  right: 0;
+  transform: translate(0, -50%);
+}
+
+/* Style the button hover effect */
+button:hover {
+  color: #f3ede1;
+  transform: scale(1.1);
+  outline: 2px solid #333f72;
+  box-shadow: 0.2rem 0.4rem 1rem -0.2rem #703607;
+}
+
+/* Add a before pseudo-element to the button */
+button::before {
+  content: "";
+  position: absolute;
+  left: -4rem;
+  top: 0;
+  width: 0;
+  height: 100%;
+  background-color: #e56e0c;
+  transform: skewX(45deg);
+  z-index: -1;
+  transition: width 1000ms;
+}
+
+button:hover::before {
+  width: 250%;
+}
+/* Styling for the grandline separator */
+#grandline {
+  background-color: #e9dac6;
+  height: 1px;
+  width: 100%;
+  margin-bottom: 2.2rem;
+}
+/* Styling for header elements */
+.btn {
+  font-size: 1rem;
+  background: transparent;
+  border: none;
+  padding: 1em 1.5em;
+  color: #333f72;
+  text-transform: uppercase;
+  position: relative;
+  transition: 0.5s ease;
+}
+
+/* Styling for header elements  before hover */
+.btn::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  width: 0;
+  background-color: #e56e0c;
+  transition: 0.8s ease;
+}
+
+/* Styling for header elements on hover */
+.btn:hover {
+  color: #e56e0c;
+  transition-delay: 0.5s;
+}
+
+/* Styling for header elements before hover on hover */
+.btn:hover::before {
+  width: 100%;
+}
+
+/* Styling for the first navigation bar */
+.first-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2.5rem;
+}
+.second-nav {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 2rem;
+  width: 9rem;
+  padding-right: 0;
+}
+
+/* Styling for the main text section */
+.main-text {
+  display: flex;
+  gap: 0.5rem;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Styling for the about us section */
+.about-us {
+  width: 50%;
+  text-align: center;
+  color: #333f72;
+  font-family: satoshi;
+  font-size: 1rem;
+}
+
+/* Styling for the ramen bowl image */
+.ramen-bowl {
+  height: 18.9rem;
+  width: 31.5rem;
+}
+
+/* Styling for the button */
+.button {
+  padding: 1em 2em;
+  border: none;
+  border-radius: 0.3rem;
+  font-weight: bold;
+  letter-spacing: 0.3rem;
+  text-transform: uppercase;
+  color: #333f72;
+  transition: all 1000ms;
+  font-size: 1rem;
+  background-color: #f3ede1;
+  position: relative;
+  overflow: hidden;
+  outline: 2px solid #e56e0c;
+  font-family: hiro misake, satoshi;
+}
+
+/* animation for the page */
+header,
+.main-text,
+.about-us,
+.button,
+.ramen-bowl,
+#grandline {
+  opacity: 0;
+  transform: translateY(-30px);
+}
+
+header {
+  animation: fadeIn 0.5s ease-in-out 0.3s forwards;
+}
+#grandline {
+  animation: fadeIn 0.5s ease-in-out 0.3s forwards;
+}
+
+.main-text {
+  animation: fadeIn 0.5s ease-in-out 0.4s forwards;
+}
+
+.about-us {
+  animation: fadeIn 0.5s ease-in-out 0.8s forwards;
+}
+
+.button {
+  animation: fadeIn 0.5s ease-in-out 1.1s forwards;
+}
+
+.ramen-bowl {
+  animation: fadeIn 0.5s ease-in-out 1.3s forwards;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/* Define custom fonts */
+@font-face {
+  font-family: "HIRO MISAKE";
+  src: url(../font/hiro_misake.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "SATOSHI";
+  src: url(../font/Satoshi-Variable.ttf) format("truetype");
+}

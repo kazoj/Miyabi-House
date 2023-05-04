@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ma recette</title>
+
+    <link rel="stylesheet" href="../css/detail.css" />
+    <link rel="stylesheet" href="../css/queriesdetail.css" />
+  </head>
+  <body>
+    <header>
+      <h1><a href="../html/index.html">MIYABI HOUSE </a></h1>
+      <nav class="first-nav">
+        <ul>
+          <li class="btn"><a href="../html/index.html">Home</a></li>
+          <li class="btn"><a href="../html/catalogue.html">Catalogue</a></li>
+          <li class="btn"><a href="../html/about.html">À propos</a></li>
+        </ul>
+      </nav>
+      <nav class="second-nav">
+        <a href="#">
+          <img src="../image/account-logo.png" alt="My Account" />
+        </a>
+        <a href="#">
+          <img src="../image/bag-happy.png" alt="Shopping Cart" />
+        </a>
+      </nav>
+    </header>
+    <div class="container">
+      <div id="grandline"></div>
+      <figure class="fig">
+        <img class="img" src="../image/slice-3.png" alt="japanese dish" />
+        <div class="main-info">
+          <img id="image" src="" alt="" />
+          <h2 id="nom"></h2>
+          <p>Catégorie : <span id="categorie"></span></p>
+          <p>Pays : <span id="pays"></span></p>
+          <p>Temps de préparation : <span id="temps"></span></p>
+        </div>
+        <img class="img" src="../image/slice-2.png" />
+      </figure>
+      <div class="middle-cont">
+        <div class="ingredient">
+          <h3>Ingrédients</h3>
+          <ul id="ingredients"></ul>
+        </div>
+        <div class="instruction">
+          <h3>Instructions</h3>
+          <ol id="instructions"></ol>
+        </div>
+        <div class="comment">
+          <h3>Note et Avis</h3>
+          <ul id="commentaires"></ul>
+        </div>
+      </div>
+    </div>
+    <script src="../JS/recettesDB.js"></script>
+    <script src="../JS/detail.js"></script>
+  </body>
+</html>

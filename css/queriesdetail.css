@@ -1,0 +1,60 @@
+/* 1100px */
+@media (max-width: 68em) {
+  h1 {
+    font-size: 0.9rem;
+  }
+  .btn {
+    font-size: 0.8rem;
+  }
+
+  .second-nav img {
+    height: 0.85rem;
+    width: 0.85rem;
+  }
+  .container .img {
+    height: 8rem;
+    width: 8rem;
+  }
+  .middle-cont h3 {
+    font-size: 1rem;
+  }
+  .middle-cont li {
+    font-size: 0.85rem;
+  }
+  .main-info h2 {
+    font-size: 1rem;
+  }
+  .main-info p {
+    font-size: 0.8rem;
+  }
+}
+/* 750px */
+@media (max-width: 47em) {
+  h1 {
+    font-size: 0.7rem;
+  }
+  .btn {
+    font-size: 0.7rem;
+  }
+
+  .second-nav img {
+    height: 0.8rem;
+    width: 0.8rem;
+  }
+  .container .img {
+    height: 7rem;
+    width: 7rem;
+  }
+  .middle-cont h3 {
+    font-size: 0.9rem;
+  }
+  .middle-cont li {
+    font-size: 0.7rem;
+  }
+  .main-info h2 {
+    font-size: 0.9rem;
+  }
+  .main-info p {
+    font-size: 0.6rem;
+  }
+}
